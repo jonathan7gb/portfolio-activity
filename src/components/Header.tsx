@@ -14,7 +14,7 @@ export default function Header() {
             <div className="mx-auto w-full max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="text-2xl m-2 group relative w-max">
-                        <Airplay className="w-8 h-8 text-primary" />
+                        <Airplay className="w-9 h-9 text-primary" />
                     </Link>
 
                     <button
@@ -37,15 +37,15 @@ export default function Header() {
                     <nav className="hidden flex-row items-center justify-between gap-2 md:flex lg:gap-6">
                         <Link href="/" className="text-base font-medium m-2 group relative w-max">
 
-                            <span className="flex items-center gap-2"> <House className="w-5 h-5 text-white" /> Home</span>
+                            <span className="flex items-center gap-2"> <House className="w-5 h-5 text-white" strokeWidth={1.8} /> Home</span>
                             <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-primary group-hover:w-full"></span>
                         </Link>
                         <Link href="/about" className="text-base font-medium m-2 group relative w-max">
-                            <span className="flex items-center gap-2"> <SquareUserRound className="w-5 h-5 text-white" /> About</span>
+                            <span className="flex items-center gap-2"> <SquareUserRound className="w-5 h-5 text-white" strokeWidth={1.8} /> About</span>
                             <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-primary group-hover:w-full"></span>
                         </Link>
                         <Link href="/projects" className="text-base font-medium m-2 group relative w-max">
-                            <span className="flex items-center gap-2"> <MonitorSmartphone className="w-5 h-5 text-white" /> Projects</span>
+                            <span className="flex items-center gap-2"> <MonitorSmartphone className="w-5 h-5 text-white" strokeWidth={1.8} /> Projects</span>
                             <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-primary group-hover:w-full"></span>
                         </Link>
                     </nav>
@@ -54,13 +54,13 @@ export default function Header() {
                 {isMenuOpen && (
                     <nav className="mt-3 flex flex-col gap-1 border-b border-primary p-2 md:hidden">
                         <Link href="/" className="rounded-md px-3 py-2 text-base font-medium transition hover:bg-primary-dark" onClick={closeMenu}>
-                            <span className="flex items-center gap-2"> <House className="w-5 h-5 text-white" /> Home</span>
+                            <span className="flex items-center gap-2"> <House className="w-5 h-5 text-white" strokeWidth={1.8} /> Home</span>
                         </Link>
                         <Link href="/about" className="rounded-md px-3 py-2 text-base font-medium transition hover:bg-primary-dark" onClick={closeMenu}>
-                            <span className="flex items-center gap-2"> <SquareUserRound className="w-5 h-5 text-white" />About</span>
+                            <span className="flex items-center gap-2"> <SquareUserRound className="w-5 h-5 text-white" strokeWidth={1.8} />About</span>
                         </Link>
                         <Link href="/projects" className="rounded-md px-3 py-2 text-base font-medium transition hover:bg-primary-dark" onClick={closeMenu}>
-                            <span className="flex items-center gap-2"> <MonitorSmartphone className="w-5 h-5 text-white" /> Projects</span>
+                            <span className="flex items-center gap-2"> <MonitorSmartphone className="w-5 h-5 text-white" strokeWidth={1.8} /> Projects</span>
                         </Link>
                     </nav>
                 )}

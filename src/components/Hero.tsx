@@ -24,7 +24,7 @@ export default function Hero() {
                 </div>
             </div>
 
-            <Image alt="Imagem de destaque do hero" width={500} height={500} src={heroImage} className="h-full w-full object-cover sm:h-[calc(100%-2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%-4rem)] md:rounded-ss-[60px]" />
+            <Image alt="Imagem de destaque do hero" width={500} height={500} src={heroImage} className="h-full w-full object-cover sm:h-[calc(100%-2rem)] sm:self-end sm:rounded-ss-[30px] sm:rounded-br-[30px] md:h-[calc(100%-4rem)] opacity-75 md:rounded-ss-[60px] md:rounded-br-[60px]" />
         </section>
     );
 }
