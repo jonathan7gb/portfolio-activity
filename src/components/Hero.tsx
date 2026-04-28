@@ -8,12 +8,12 @@ export default function Hero() {
             <div className="py-8 md:py-12 lg:py-32">
                 <div className="mx-auto max-w-xl ltr:sm:text-left rtl:sm:text-right">
                     <h2 className="text-2xl flex flex-col font-bold text-gray-900 md:text-3xl dark:text-white">
-                        <span>Hello! My name is</span> 
+                        <span>Hello! My name is</span>
                         <span className="text-primary text-4xl font-bold">Jonathan Luis Uber</span>
                     </h2>
 
                     <p className="hidden w-90 text-gray-500 md:mt-4 md:block dark:text-gray-400 pr-4">
-                        I am a software developer passionate about creating solutions that positively impact people's lives.
+                        I am a systems analyst and developer in training. I am constantly learning and improving my skills in FullStack development, seeking to create modern and efficient solutions.
                     </p>
 
                     <div className="mt-8">
@@ -24,7 +24,7 @@ export default function Hero() {
                 </div>
             </div>
 
-            <Image alt="Imagem de destaque do hero" width={500} height={500} src={heroImage} className="h-full w-full object-cover sm:h-[calc(100%-2rem)] sm:self-end sm:rounded-ss-[30px] sm:rounded-br-[30px] md:h-[calc(100%-4rem)] opacity-75 md:rounded-ss-[60px] md:rounded-br-[60px]" />
+            <Image alt="Imagem de destaque do hero" width={500} height={500} src={heroImage} className="h-full w-full object-cover sm:h-[calc(100%-2rem)] sm:self-end rounded-ss-[30px] rounded-br-[30px] md:h-[calc(100%-4rem)] opacity-75 md:rounded-ss-[60px] md:rounded-br-[60px]" />
         </section>
     );
 }
