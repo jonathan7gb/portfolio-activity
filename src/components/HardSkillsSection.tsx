@@ -141,21 +141,17 @@ export default function HardSkillsSection() {
                     },
                 });
 
-                // Sequência: destaca 1 por vez; ao final, tudo volta ao normal.
                 cardEls.forEach((card, i) => {
                     const base = i;
 
-                    // Entra em foco
                     tl.to(
                         card,
                         { scale: 1.12, filter: "brightness(1)", duration: 0.30 },
                         base
                     );
 
-                    // Mantém um pouco em foco (mesmo com scrub isso dá “peso”)
                     tl.to(card, { scale: 1.12, filter: "brightness(1)", duration: 0.25 }, base + 0.4);
 
-                    // Sai do foco (logo antes do próximo entrar)
                     tl.to(
                         card,
                         { scale: 1, filter: "brightness(0.80)", duration: 0.30 },
