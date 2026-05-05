@@ -9,7 +9,12 @@ export default function Hero() {
                 <div className="mx-auto max-w-xl ltr:sm:text-left rtl:sm:text-right">
                     <h2 className="text-2xl flex flex-col font-bold text-gray-900 md:text-3xl dark:text-white">
                         <span>Hello! My name is</span>
-                        <span className="text-primary text-4xl font-bold">Jonathan Luis Uber</span>
+                        <span
+                            className="text-primary text-4xl font-bold animate-typewriter"
+                            style={{ ["--typing-width" as never]: "18ch" }}
+                        >
+                            Jonathan Luis Uber
+                        </span>
                     </h2>
 
                     <p className="hidden w-90 text-gray-500 md:mt-4 md:block dark:text-gray-400 pr-4">
