@@ -11,7 +11,7 @@ export default function Header() {
 
     return (
         <header className="w-full text-white">
-            <div className="mx-auto w-full max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
+            <div className="mx-auto w-full max-w-6xl py-4 ">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="text-2xl m-2 group relative w-max">
                         <Airplay className="w-9 h-9 text-primary" />

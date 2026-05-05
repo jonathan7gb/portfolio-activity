@@ -1,7 +1,14 @@
+import SoftSkillsSection from "@/components/SoftSkillsSection";
+import HardSkillsSection from "@/components/HardSkillsSection";
+
 export default function About() {
     return (
-        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-            <h1>About</h1>
-        </div>
+        <main className="w-full">
+
+            <h1 className="text-4xl font-bold text-primary mt-16 max-w-6xl mx-auto ">ABOUT ME</h1>
+
+            <SoftSkillsSection />
+            <HardSkillsSection />
+        </main>
     );
 }
